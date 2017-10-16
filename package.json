@@ -12,5 +12,8 @@
     "mobylogix"
   ],
   "author": "Mobylogix",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
 }

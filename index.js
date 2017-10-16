@@ -1,3 +1,14 @@
+// We use cryptographically strong PRNGs (crypto.getRandomBytes() on the server,
+// window.crypto.getRandomValues() in the browser) when available. If these
+// PRNGs fail, we fall back to the Alea PRNG, which is not cryptographically
+// strong, and we seed it with various sources such as the date, Math.random,
+// and window size on the client.  When using crypto.getRandomValues(), our
+// primitive is hexString(), from which we construct fraction(). When using
+// window.crypto.getRandomValues() or alea, the primitive is fraction and we use
+// that to construct hex string.
+
+var nodeCrypto = require('crypto');
+
 // see http://baagoe.org/en/wiki/Better_random_numbers_for_javascript
 // for a full discussion and Alea implementation.
 var Alea = function () {
