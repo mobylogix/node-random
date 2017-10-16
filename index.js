@@ -292,4 +292,4 @@ Random.createWithSeeds = function (...seeds) {
 // secure
 Random.insecure = createAleaGeneratorWithGeneratedSeed();
 
-export default Random;
+module.exports = Random;
