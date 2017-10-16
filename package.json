@@ -1,0 +1,16 @@
+{
+  "name": "@mobylogix/node-random",
+  "version": "1.0.0",
+  "description": "Node random package similar to meteor random package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "random",
+    "node",
+    "mobylogix"
+  ],
+  "author": "Mobylogix",
+  "license": "ISC"
+}
