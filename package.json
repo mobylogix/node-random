@@ -1,6 +1,6 @@
 {
   "name": "@mobylogix/node-random",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node random package similar to meteor random package",
   "main": "index.js",
   "scripts": {
