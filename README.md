@@ -1,5 +1,15 @@
 # random
 
+```
+npm i --save @mobylogix/node-random
+```
+
+```javascript
+import {Random} from '@mobylogix/node-random';
+
+let id = Random.id();
+```
+
 The `random` package provides several functions for generating random
 numbers. It uses a cryptographically strong pseudorandom number generator when
 possible, but falls back to a weaker random number generator when
